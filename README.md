@@ -1,69 +1,101 @@
-# React + TypeScript + Vite
+# Task Manager SaaS Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un dashboard moderno de gestión de tareas construido con React, TypeScript y Vite. Este proyecto forma parte de mi portfolio y demuestra la transición de Angular/Ionic a React mediante la implementación de un SaaS completo.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 18** - Librería de UI
+- **TypeScript** - Tipado estático
+- **Vite** - Build tool y dev server
+- **React Router DOM** - Enrutamiento del lado del cliente
+- **Tailwind CSS** - Framework de CSS utilitario
+- **Lucide React** - Iconos modernos
 
-## Expanding the ESLint configuration
+## 📋 Características Planificadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ✅ Configuración inicial del proyecto
+- 🔄 Sistema de autenticación (registro/login)
+- 🔄 Protección de rutas privadas
+- 🔄 CRUD completo de tareas
+- 🔄 Dashboard con estadísticas
+- 🔄 Integración con API
+- 🔄 Diseño responsivo
+- 🔄 Optimizaciones de rendimiento
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Instalación
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+# Clonar el repositorio
+git clone https://github.com/[tu-usuario]/task-manager-saas.git
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Navegar al directorio
+cd task-manager-saas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# Instalar dependencias
+npm install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# Ejecutar en modo desarrollo
+npm run dev
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---------------------------------------------------------------------------------------------
+
+📁 Estructura del Proyecto
+src/
+├── components/     # Componentes reutilizables
+├── pages/         # Páginas/vistas principales
+├── hooks/         # Custom hooks
+├── services/      # Servicios para API calls
+├── types/         # Definiciones de TypeScript
+├── utils/         # Utilidades y helpers
+└── App.tsx        # Componente principal
+
+
+🎯 Proceso de Desarrollo
+Este proyecto sigue una metodología de aprendizaje paso a paso, comparando conceptos de Angular/Ionic con React:
+
+Configuración inicial - Vite vs Angular CLI
+Estructura de proyecto - Módulos vs Componentes
+Sistema de routing - Angular Router vs React Router
+Autenticación - Servicios vs Hooks/Context
+Gestión de estado - Services vs Context API/Redux
+Integración con API - HttpClient vs Fetch/Axios
+Dashboard y visualizaciones - Componentes vs Librerías
+Optimización y despliegue - Lazy loading vs Code splitting
+
+🚦 Scripts Disponibles
+bashnpm run dev          # Servidor de desarrollo
+npm run build        # Build para producción
+npm run preview      # Preview del build
+npm run lint         # Linting con ESLint
+npm run type-check   # Verificación de tipos TS
+
+
+🔧 Configuración de Desarrollo
+Requisitos previos
+
+Node.js >= 18.0.0
+npm >= 8.0.0
+
+Variables de entorno
+Crear archivo .env.local:
+VITE_API_URL=http://localhost:3001
+VITE_APP_NAME=Task Manager SaaS
+
+
+📈 Roadmap
+
+ Fase 1: Setup y configuración inicial
+ Fase 2: Autenticación y protección de rutas
+ Fase 3: CRUD de tareas
+ Fase 4: Dashboard con estadísticas
+ Fase 5: Optimizaciones y despliegue
+
+🤝 Contribución
+Este es un proyecto de aprendizaje personal, pero si tienes sugerencias o encuentras algún error, no dudes en abrir un issue.
+
+📝 Notas de Aprendizaje
+Diferencias clave Angular vs React observadas:
+
+Configuración: Angular CLI más opinado vs Vite más flexible
+TypeScript: Integrado por defecto vs configuración manual
+Estilos: CSS/SCSS clásico vs Tailwind utilitario
+Estructura: Módulos y servicios vs Componentes y hooks
