@@ -25,7 +25,7 @@ function Sidebar({ className = "" }: SidebarProps) {
     { name: "Contact", icon: Contact, path: "/contact" },
   ];
 
-  const activeLink = "text-white bg-[var(--primary-color)]";
+  const activeLink = "text-white bg-[var(--primary-color)] shadow-sm";
 
   return (
     <aside
@@ -40,7 +40,7 @@ function Sidebar({ className = "" }: SidebarProps) {
               ${
                 location.pathname === link.path
                   ? activeLink
-                  : "text-[#64748b] hover:text-white hover:bg-[var(--primary-color-hover)] hover:shadow-md"
+                  : "text-[#64748b] hover:bg-[var(--primary-color-hover-light)]"
               }`}
           >
             <link.icon />
