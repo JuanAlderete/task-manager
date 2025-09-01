@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+:root {
+  --primary-color: #0b64f4;
+  --primary-color-hover: #3b82f6;
+  --background-primary: #ffffff;
+  --background-secondary: #f8fafc;
+  --sidebar-border: #e9edf2;
+  --text-color: #343e4e;
+}
+
+body {
+  color: var(--text-color);
+}
+
+input {
+  background-color: #f1f5f9;
+  color: #343e4e;
+
+  &::placeholder {
+    color: #9ca3af;
+  }
+}
