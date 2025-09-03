@@ -41,11 +41,17 @@ npm run dev
 📁 Estructura del Proyecto
 src/
 ├── components/     # Componentes reutilizables
+
 ├── pages/         # Páginas/vistas principales
+
 ├── hooks/         # Custom hooks
+
 ├── services/      # Servicios para API calls
+
 ├── types/         # Definiciones de TypeScript
+
 ├── utils/         # Utilidades y helpers
+
 └── App.tsx        # Componente principal
 
 
