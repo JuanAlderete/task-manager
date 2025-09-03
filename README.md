@@ -58,37 +58,46 @@ src/
 
 
 🎯 Proceso de Desarrollo
+
 Este proyecto sigue una metodología de aprendizaje paso a paso, comparando conceptos de Angular/Ionic con React:
 
 Configuración inicial - Vite vs Angular CLI
+
 Estructura de proyecto - Módulos vs Componentes
+
 Sistema de routing - Angular Router vs React Router
+
 Autenticación - Servicios vs Hooks/Context
+
 Gestión de estado - Services vs Context API/Redux
+
 Integración con API - HttpClient vs Fetch/Axios
+
 Dashboard y visualizaciones - Componentes vs Librerías
+
 Optimización y despliegue - Lazy loading vs Code splitting
 
+
 🚦 Scripts Disponibles
+
 npm run build        # Build para producción
+
 npm run preview      # Preview del build
+
 npm run lint         # Linting con ESLint
+
 npm run type-check   # Verificación de tipos TS
-
-
-🔧 Configuración de Desarrollo
-Requisitos previos
-
-Node.js >= 18.0.0
-npm >= 8.0.0
-
 
 📈 Roadmap
 
  Fase 1: Setup y configuración inicial
+
  Fase 2: Autenticación y protección de rutas
+
  Fase 3: CRUD de tareas
+
  Fase 4: Dashboard con estadísticas
+
  Fase 5: Optimizaciones y despliegue
 
 🤝 Contribución
