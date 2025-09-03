@@ -57,6 +57,7 @@ src/
 └── App.tsx        # Componente principal
 
 
+
 🎯 Proceso de Desarrollo
 
 Este proyecto sigue una metodología de aprendizaje paso a paso, comparando conceptos de Angular/Ionic con React:
@@ -78,6 +79,7 @@ Dashboard y visualizaciones - Componentes vs Librerías
 Optimización y despliegue - Lazy loading vs Code splitting
 
 
+
 🚦 Scripts Disponibles
 
 npm run build        # Build para producción
@@ -87,6 +89,8 @@ npm run preview      # Preview del build
 npm run lint         # Linting con ESLint
 
 npm run type-check   # Verificación de tipos TS
+
+
 
 📈 Roadmap
 
@@ -100,13 +104,21 @@ npm run type-check   # Verificación de tipos TS
 
  Fase 5: Optimizaciones y despliegue
 
+
+
 🤝 Contribución
 Este es un proyecto de aprendizaje personal, pero si tienes sugerencias o encuentras algún error, no dudes en abrir un issue.
 
+
+
 📝 Notas de Aprendizaje
+
 Diferencias clave Angular vs React observadas:
 
 Configuración: Angular CLI más opinado vs Vite más flexible
+
 TypeScript: Integrado por defecto vs configuración manual
+
 Estilos: CSS/SCSS clásico vs Tailwind utilitario
+
 Estructura: Módulos y servicios vs Componentes y hooks
