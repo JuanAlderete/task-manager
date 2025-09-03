@@ -25,10 +25,10 @@ Un dashboard moderno de gestión de tareas construido con React, TypeScript y Vi
 ## 🛠️ Instalación
 
 # Clonar el repositorio
-git clone https://github.com/[tu-usuario]/task-manager-saas.git
+git clone https://github.com/JuanAlderete/task-manager
 
 # Navegar al directorio
-cd task-manager-saas
+cd task-manager
 
 # Instalar dependencias
 npm install
@@ -62,7 +62,6 @@ Dashboard y visualizaciones - Componentes vs Librerías
 Optimización y despliegue - Lazy loading vs Code splitting
 
 🚦 Scripts Disponibles
-bashnpm run dev          # Servidor de desarrollo
 npm run build        # Build para producción
 npm run preview      # Preview del build
 npm run lint         # Linting con ESLint
@@ -74,11 +73,6 @@ Requisitos previos
 
 Node.js >= 18.0.0
 npm >= 8.0.0
-
-Variables de entorno
-Crear archivo .env.local:
-VITE_API_URL=http://localhost:3001
-VITE_APP_NAME=Task Manager SaaS
 
 
 📈 Roadmap
