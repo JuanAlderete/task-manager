@@ -40,6 +40,7 @@ npm run dev
 
 📁 Estructura del Proyecto
 src/
+
 ├── components/     # Componentes reutilizables
 
 ├── pages/         # Páginas/vistas principales
