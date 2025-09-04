@@ -1,8 +1,9 @@
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import { useState } from "react";
+import { Outlet } from "react-router";
 
-function Layout({ children }: { children: React.ReactNode }) {
+function Layout() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
@@ -14,7 +15,9 @@ function Layout({ children }: { children: React.ReactNode }) {
       />
       <div className="flex flex-col w-full">
         <Header onMenuClick={() => setIsSidebarOpen(true)} />
-        <main className="flex-1 p-6 overflow-y-auto">{children}</main>
+        <main className="flex-1 p-6 overflow-y-auto">
+          <Outlet />
+        </main>
       </div>
     </section>
   );
