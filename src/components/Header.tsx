@@ -1,11 +1,23 @@
 import { Bell, Plus, Search, Menu } from "lucide-react";
 import Button from "./Button";
+import { useEffect, useState } from "react";
+import { ProjectService } from "../services/projectService";
 
 interface HeaderProps {
   onMenuClick?: () => void;
 }
 
 function Header({ onMenuClick }: HeaderProps) {
+  // TODO: Busqueda para cada page
+  // const [searchData, setSearchData] = useState("");
+
+  // useEffect(() => {
+  //   const getData = setTimeout(() => {
+  //     ProjectService.searchProjects(searchData, "");
+  //   }, 2000);
+  //   return () => clearTimeout(getData);
+  // }, [searchData]);
+
   return (
     <header className="flex items-center justify-between p-4 border-b border-[var(--sidebar-border)] shadow-xs gap-4 w-full">
       <div className="flex items-center gap-2 w-full md:w-auto">
@@ -21,6 +33,7 @@ function Header({ onMenuClick }: HeaderProps) {
             type="text"
             className="w-full rounded-lg py-2 pl-9 pr-4 focus:outline-[var(--text-color)]"
             placeholder="Search..."
+            // onChange={(event) => setSearchData(event.target.value)}
           />
         </div>
       </div>

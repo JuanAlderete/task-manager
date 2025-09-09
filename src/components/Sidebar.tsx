@@ -6,6 +6,7 @@ import {
   X,
   type LucideProps,
 } from "lucide-react";
+import Tooltip from "./Tooltip";
 
 interface SidebarProps {
   className?: string;
@@ -24,6 +25,7 @@ function Sidebar({ className = "", isOpen, onClose }: SidebarProps) {
     path: string;
   }[] = [
     { name: "Home", icon: House, path: "/" },
+    { name: "Projects", icon: House, path: "/projects" },
     { name: "About", icon: CircleQuestionMark, path: "/about" },
     { name: "Contact", icon: Contact, path: "/contact" },
   ];
@@ -54,20 +56,22 @@ function Sidebar({ className = "", isOpen, onClose }: SidebarProps) {
 
         <div className="flex flex-col gap-2 py-4 px-2">
           {links.map((link) => (
-            <Link
-              to={link.path}
-              key={link.name}
-              onClick={onClose}
-              className={`flex gap-2 items-center p-2 rounded cursor-pointer select-none 
+            <Tooltip key={link.name} text={link.name} >
+              <Link
+                to={link.path}
+                key={link.name}
+                onClick={onClose}
+                className={`flex gap-2 items-center p-2 rounded cursor-pointer select-none 
                 ${
                   location.pathname === link.path
                     ? activeLink
                     : "text-[#64748b] hover:bg-[var(--primary-color-hover-light)]"
                 }`}
-            >
-              <link.icon />
-              {link.name}
-            </Link>
+              >
+                <link.icon />
+                {link.name}
+              </Link>
+            </Tooltip>
           ))}
         </div>
       </aside>
